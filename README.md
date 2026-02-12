@@ -44,3 +44,11 @@ Outputs:
 - multi-ticker support for survivorship-robust evaluation sets
 - walk-forward train/validation/test for RL and test-only evaluation for rule-based methods
 - explicit train/test split to prevent leakage
+
+## Notebook workflow (lightweight, no RL)
+
+If you want an interactive debugging workflow, open:
+
+- `notebooks/lightweight_backtest_debug.ipynb`
+
+This notebook contains a compact end-to-end backtest pipeline for deterministic + probabilistic strategies only (RL excluded).
