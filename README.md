@@ -10,7 +10,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Download data (explicit)
+## Download data
 
 ```bash
 export MASSIVE_API_KEY=XXXX
@@ -19,17 +19,8 @@ python -m data.download --tickers TTD AAPL MSFT NVDA --start 2020-01-01 --end 20
 
 ## Run experiment
 
-If data already exists in `data/raw/`:
-
 ```bash
-python run_experiment.py --tickers TTD AAPL MSFT NVDA
-```
-
-Or auto-download missing tickers during the run:
-
-```bash
-export MASSIVE_API_KEY=XXXX
-python run_experiment.py --tickers TTD AAPL MSFT NVDA --start 2020-01-01 --end 2026-01-01 --auto-download
+python run_experiment.py
 ```
 
 Outputs:

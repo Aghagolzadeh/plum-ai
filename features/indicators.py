@@ -44,6 +44,6 @@ def compute_indicators(
     ).replace([np.inf, -np.inf], np.nan).fillna(0.0)
 
     data["rolling_volatility"] = data["rolling_volatility"].fillna(0.0)
-    data["rolling_mean"] = data["rolling_mean"].bfill().fillna(data["close"])
+    data["rolling_mean"] = data["rolling_mean"].fillna(method="bfill").fillna(data["close"])
 
     return data
